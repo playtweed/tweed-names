@@ -11,7 +11,9 @@ var idx = 0;
 function generate() {
     var n = names[idx];
     idx = (idx + 1) % names.length;
+    return n;
 }
 
-
-module.exports = generate;
+module.exports = {
+    generate: generate
+}
